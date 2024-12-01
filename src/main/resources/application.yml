@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  application:
+    name: open-banking-application
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/oba?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: oba
+    database: oba
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8081

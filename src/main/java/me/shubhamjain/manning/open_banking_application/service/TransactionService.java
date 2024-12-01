@@ -1,8 +1,7 @@
 package me.shubhamjain.manning.open_banking_application.service;
 
-import java.util.List;
-import me.shubhamjain.manning.open_banking_application.model.Transaction;
+import me.shubhamjain.manning.open_banking_application.model.TransactionResponse;
 
 public interface TransactionService {
-  List<Transaction> findAllByAccountNumber(String accountNumer);
+  TransactionResponse findAllByAccountNumber(String accountNumber);
 }
